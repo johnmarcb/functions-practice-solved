@@ -11,6 +11,12 @@
 */
 
 // Your function code starts here...
+function rectArea(a,b){
+  let sideA = parseInt(a);
+  let sideB = parseInt(b);
+
+  return sideA * sideB;
+}
 
 
 // Use the function you created above to calculate the areas of 3 rooms
@@ -18,6 +24,10 @@
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
 
 // Your code goes here:
+
+let room1 = rectArea(4,6);
+let room2 = rectArea(13,3);
+let room3 = rectArea(4,8);
 
 
 
@@ -32,13 +42,17 @@
  */
 
 // Your code goes here...
+function totalRoomsArea(area1, area2, area3){
+  let total = area1 + area2 + area3;
+  return total;
+}
 
 
 
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 variables as arguments for the function call
 const result = function () {
-    console.log(/* replace this comment with a function call here... */);
+    console.log(totalRoomsArea(room1, room2, room3));
 }
 
 
